@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var SueldoBase=parseInt(prompt("¿Cuál es su sueldo base?"));
+            var PrecioVenta1=parseInt(prompt("¿Importe de la primera venta?"));
+            var PrecioVenta2=parseInt(prompt("¿Importe de la segunda venta?"));
+            var PrecioVenta3=parseInt(prompt("¿Importe de la tercera venta?"));
+            var Comision1=PrecioVenta1*0.1;
+            var Comision2=PrecioVenta2*0.1;
+            var Comision3=PrecioVenta3*0.1;
+            var TotalSueldo=SueldoBase+Comision1+Comision2+Comision3;
+            $("#texto").html("El dinero total a recibir es: "+TotalSueldo);
+        });
+    </script>
+</head>
+<body>
+    <p id="texto"></p>
+</body>
+</html>

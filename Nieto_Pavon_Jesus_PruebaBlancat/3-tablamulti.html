@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tabla multiplicar</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+          $(document).ready(function(){
+            $("#calcula").click(function(){
+                var tabla = document.getElementById('numero').value;
+                    for (var i = 0; i < 11; i++) {
+                        document.write(tabla+"X"+i+"="+(i*tabla)+"<br>");
+                    }   
+            });
+          });          
+    </script>
+</head>
+<body>
+    <input type="text" id="numero" value="Introduce numero">
+    <button id="calcula">Calcula</button>
+</body>
+</html>

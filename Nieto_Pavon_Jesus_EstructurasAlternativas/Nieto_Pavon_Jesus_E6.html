@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#accionador1").click(function () {
+                var valor1= $("#input1").val();
+                var valor2= $("#input2").val();
+                
+                if (valor1=="pepe" & valor2=="asdasd") {
+                    alert("Has entrado al sistema");
+                }else{
+                    alert("Error: Los datos introducidos no son correctos");
+                }
+
+            });
+        });
+        </script>
+</head>
+<body>
+        <p id="texto1">Nombre de usuario <input id="input1" type="text" value="" size="10" style="color: black"> </p>
+        <p id="texto2">Contraseña <input id="input2" type="password" value="" size="10" style="color: black"> </p>
+        <button id="accionador1">Log in</button>
+</body>
+</html>

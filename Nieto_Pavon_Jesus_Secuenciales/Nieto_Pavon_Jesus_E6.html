@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var numero1=parseInt(prompt("Escriba el primer número"));
+            var numero2=parseInt(prompt("Escriba el segundo número"));
+            var numero3=parseInt(prompt("Escriba el tercer número"));
+            var media=(numero1+numero2+numero3)/3
+            $("#total").html("La media de los números introducidos es: "+media);
+        });
+    </script>
+</head>
+<body>
+    <p id="total"></p>
+</body>
+</html>

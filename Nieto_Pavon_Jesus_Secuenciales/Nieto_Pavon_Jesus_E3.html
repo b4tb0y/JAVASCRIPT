@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var cat1=parseInt(prompt("Indique el cateto 1"));
+            var cat2=parseInt(prompt("Indique el cateto 2"));
+            var suma= (Math.pow(cat1,2)) + (Math.pow(cat2,2));
+            var hipo= Math.sqrt(suma);
+            $("#texto").html("La hipotenusa del triangulo segun los catetos propuestos es: "+hipo);
+        });
+        </script>
+</head>
+<body>
+    <p id="texto"></p>
+</body>
+</html>

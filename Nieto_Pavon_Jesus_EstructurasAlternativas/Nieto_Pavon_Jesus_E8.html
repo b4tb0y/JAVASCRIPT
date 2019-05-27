@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#accionador1").click(function () {
+                var valor1= $("#input1").val();
+                var valor2= $("#input2").val();
+                var valor3= $("#input3").val();
+                
+                if (valor1>=5 & valor2>=18 & valor3=="F") {
+                    alert("ACEPTADA");
+                }else if(valor1>=5 & valor2>=18 & valor3=="M"){
+                    alert("POSIBLE");
+                }else {
+                    alert("NO ACEPTADA");
+                }
+            });
+        });
+        </script>
+</head>
+<body>
+        <p id="texto1">Nota <input id="input1" type="text" value="" size="10" style="color: black"> </p>
+        <p id="texto2">Edad <input id="input2" type="text" value="" size="10" style="color: black"> </p>
+        <p id="texto3">Sexo (M/F) <input id="input3" type="text" value="" size="10" style="color: black"> </p>
+        <button id="accionador1">Listo</button>
+</body>
+</html>

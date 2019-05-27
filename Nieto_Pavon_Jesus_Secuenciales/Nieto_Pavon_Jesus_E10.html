@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            var parcial1=parseFloat(prompt("Nota primer parcial"));
+            var parcial2=parseFloat(prompt("Nota segundo parcial"));
+            var parcial3=parseFloat(prompt("Nota tercer parcial"));
+            var mediafinal=((parcial1+parcial2+parcial3)/3)*0.55;
+            var final=parseFloat(prompt("Nota examen final"))
+            var ExamenFinal=final*0.3;
+            var trabajo=parseFloat(prompt("Nota del trabajo final"));
+            var TrabajoFinal=trabajo*0.15;
+            var NotaTotal=mediafinal+ExamenFinal+TrabajoFinal;
+            $("#texto").html("La nota final del curso es: "+ NotaTotal);            
+        });
+    </script>
+</head>
+<body>
+    <p id="texto"></p>
+</body>
+</html>

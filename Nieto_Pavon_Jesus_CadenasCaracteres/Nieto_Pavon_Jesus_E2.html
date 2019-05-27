@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+var input1 = prompt("Introduce la primera cadena");
+var input2 = prompt("Introduce la segunda cadena");
+var esIgual = true;
+
+    if(input1.length < input2.length){
+        alert("La cadena introducida es mayor que la primera");
+    }else{    
+        for (var i = 0; i < input2.length; i++) {
+            if(input1[i]!=input2[i]){
+                esIgual = false;
+                $('#texto1').text("La primera cadena NO comienza con los mismos caracteres que la segunda");
+            }else{
+                $('#texto1').text("La primera cadena SI comienza con los mismos caracteres que la segunda");
+            }
+        }    
+    }
+});
+
+</script>
+
+
+</head>
+<body>
+    <p id="texto1"></p>
+    
+</body>
+</html>

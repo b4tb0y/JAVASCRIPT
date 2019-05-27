@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ejercicio 2 | contar palabras</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".contar").click(function(){
+            var a = 0;
+            var e = 0;
+            var i = 0;
+            var o = 0;
+            var u = 0;
+            
+            var palabras_obtenidas = $("#form").val();
+
+            for (var inicio = 0; j < palabras_obtenidas.length; j++) {
+                var letra = palabras_obtenidas[inicio];
+                
+                if (letra == "a") {
+                    a++;
+                }
+                else if (letra == "e") {
+                    e++
+                }
+                else if (letra == "i") {
+                    i++
+                }
+                else if (letra == "o") {
+                    o++
+                }
+                else if (letra == "u") {
+                    u++
+                }
+            }
+                $("#a").html("El numero de a es:" + a);
+                $("#e").html("El numero de e es:" + e);
+                $("#i").html("El numero de i es:" + i);
+                $("#o").html("El numero de o es:" + o);
+                $("#u").html("El numero de u es:" + u);
+            });
+        });
+    </script>
+</head>
+<body>
+    <input id="form" type="text" value="hello world!"/>
+    <button class="contar">Contar palabras</button>
+    <p id="a"></p>
+    <p id="e"></p>
+    <p id="i"></p>
+    <p id="o"></p>
+    <p id="u"></p>
+</body>
+</html>
