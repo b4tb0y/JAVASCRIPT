@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+var input1 = prompt("Introduce una frase");
+var input2 = " ";
+var iniciales= "";
+   
+        iniciales += input1[0].toUpperCase();
+        for (var i = 0; i < input1.length; i++) {
+            if(input1[i]==input2 && input1[i +1]!=input2){ 
+                                
+                iniciales += input1[i + 1].toUpperCase();
+                }
+
+        $('#texto1').text("Sus iniciales son: "+ iniciales);   
+    }
+});
+
+</script>
+
+
+</head>
+<body>
+    <p id="texto1"></p>
+    
+</body>
+</html>

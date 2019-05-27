@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+var input1 = prompt("Introduce una frase");
+var input2 = " ";
+var nVeces = 1;
+   
+        for (var i = 0; i < input1.length; i++) {
+            if(input1[i]==input2[0] && input1[i +1]!=input2){ 
+                nVeces++;
+                }
+        $('#texto1').text("La frase introducida tiene "+ nVeces+" palabras.");   
+    }
+});
+
+</script>
+
+
+</head>
+<body>
+    <p id="texto1"></p>
+    
+</body>
+</html>
